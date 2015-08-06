@@ -1,0 +1,581 @@
+
+
+/**
+ * Reset some basic elements
+ */
+// body, h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre, hr,
+// dl, dd, ol, ul, figure {
+//     margin: 0;
+//     padding: 0;
+// }
+//
+//
+//
+// /**
+//  * Basic styling
+//  */
+// body {
+//     font-family: $base-font-family;
+//     font-size: $base-font-size;
+//     line-height: $base-line-height;
+//     font-weight: 300;
+//     color: $text-color;
+//     background-color: $background-color;
+//     -webkit-text-size-adjust: 100%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//abhi css start
+@import "vendor/bootstrap/_bootstrap.scss";
+body {
+  overflow: hidden;
+}
+.mango-container {
+  margin-top: 150px;
+}
+
+/* BOOTSTRAP OVERRIDES */
+.mango-nav.navbar {
+  margin-top: 20px;
+  z-index: $element-zindex + 100;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  text-decoration: underline;
+  outline: none;
+}
+.nav > li > a {
+  color: $color-nav-text;
+  font-family: $headings-font-family;
+}
+li.active >a {
+  font-weight: bold;
+}
+.navbar-header {
+  margin-top: -6px;
+  .navbar-toggle {
+    margin-right: 2px;
+    padding:5px 5px;
+    border-color: $color-nav-text;
+    .icon-bar {
+      background-color: $color-nav-text;
+    }
+  }
+}
+.navbar-fixed-top
+{
+   
+}
+.mango-relative {
+  position: relative;
+}
+.mango-logo {
+  
+  position: absolute;
+  left: 40px;
+  top: 27px;
+  z-index: $element-zindex;
+  img {
+    width: 100%;
+  }
+}
+.green-box {
+    background-color: $box-color-1;
+}
+.black-box {
+    background-color: $box-color-2;
+}
+.yellow-box {
+    background-color: $box-color-3;
+}
+.mango-boxes-right {
+  background-image: url(../images/boxes-1.png);
+   background-position: 0;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  right: -80px;
+  width: 500px;
+  height: 320px;
+  
+  z-index: $element-zindex;
+  .brand {
+    margin-top: 48px;
+    margin-left: 60px;
+    color: $color-white;
+    h1 {
+      font-size: 25px
+    }
+    a {
+      color: $color-white;
+      &:hover, &:active {
+        text-decoration: none;
+      }
+    }
+
+  }
+  .social-box {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    i {
+      font-size: 35px;
+      padding: 5px;
+    }
+  }
+}
+
+.mango-boxes-left {
+  background-image: url(../images/boxes-2.png);
+  background-position: 0;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: 300px;
+  height: 300px;
+  z-index: $element-zindex;
+  p.gift {
+    color: $color-black;
+    text-align: left;
+    font-size: 18px;
+    position: absolute;
+    left: 140px;
+    top: 135px;
+    line-height: 18px;
+  }
+
+  p.subscription {
+    color: $color-white;
+    text-align: right;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    line-height: 18px;
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+section h1 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+section p {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+section h3 {
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+//Media Queries
+
+@media screen and (min-width: 320px) and (max-width:640px) {
+  .mango-logo {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: $element-zindex+1;
+  img {
+    width: 100%;
+  }
+}
+  .navbar-fixed-top {
+    top: 20px;
+    right: 0;
+    max-width: 60%;
+    
+    left: 144px;
+    }
+  .mango-boxes-right {
+  background-image: url(../images/boxes-1.png);
+   background-position: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  width: 260px;
+  height: 210px;
+  
+  z-index: $element-zindex;
+ 
+  .social-box {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    i {
+      font-size: 15px;
+      padding: 2px;
+    }
+  }
+ 
+
+}
+  .mango-boxes-left {
+  background-image: url(../images/boxes-2.png);
+  background-position: 0;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position:relative;
+  bottom: 0;
+  left: -15px;
+  width: 275px;
+  height: 209px;
+  z-index: $element-zindex;
+  p.gift {
+    color: $color-black;
+    text-align: left;
+    font-size: 14px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    line-height: 18px;
+  }
+
+  p.subscription {
+    color: $color-white;
+    text-align: right;
+    font-size: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    line-height: 18px;
+  }
+
+}
+  .pull-right 
+  {
+  font-size:10px;
+  position:absolute;
+  top:150px;
+  left:142px;
+  }
+
+}
+@media screen and (min-width: 769px) and (max-width:991px) {
+  .mango-logo {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: $element-zindex+1;
+  img {
+    width: 100%;
+  }
+}
+
+
+}
+@media screen and (min-width: 992px) and (max-width:1199px) {
+  .mango-logo {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: $element-zindex+1;
+  img {
+    width: 100%;
+  }
+}
+  .mango-boxes-right {
+  background-image: url(../images/boxes-1.png);
+   background-position: 0;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  width: 400px;
+  height: 245px;
+  
+  z-index: $element-zindex;
+ 
+  .social-box {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    i {
+      font-size: 30px;
+      padding: 3px;
+    }
+  }
+}
+}
+
+@media (max-width: 728px) {
+  body {
+    overflow: visible;
+  }
+  .navbar-nav {
+    background-color: $box-color-3;
+  }
+  .navbar-fixed-top
+  {
+   
+  }
+  .nav > li {
+    text-align: center;
+    > a{
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .navbar-header {
+    .navbar-toggle {
+      z-index: $element-zindex + 200;
+    }
+  }
+  
+  .mango-container {
+    margin-bottom: 300px;
+  }
+}
+// Lol Shameless Marketing.
+footer, .footer {
+  .abi {
+    &, a {
+      color: $gray-lighter;
+      font-size: 8px;
+      text-align: right
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//abhi css end
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
