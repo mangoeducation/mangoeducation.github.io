@@ -44,6 +44,7 @@ body {
 }
 .mango-container {
   margin-top: 150px;
+  padding-top:100px;
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -193,8 +194,12 @@ section h3 {
 }
 
 //Media Queries
-
+//responsive styles for mobiles
 @media screen and (min-width: 320px) and (max-width:640px) {
+  .mango-container
+  {
+    padding-top:0px;
+  }
   .mango-logo {
   width: 100px;
   position: absolute;
@@ -278,7 +283,13 @@ section h3 {
   }
 
 }
-@media screen and (min-width: 769px) and (max-width:991px) {
+
+//responsive styles for tablets--landscape
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .mango-nav.navbar {
+  margin-top: 145px;
+  z-index: $element-zindex + 100;
+}
   .mango-logo {
   width: 100px;
   position: absolute;
@@ -288,16 +299,39 @@ section h3 {
   img {
     width: 100%;
   }
+  }
+   .mango-boxes-right {
+  background-image: url(../images/boxes-1.png);
+   background-position: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 400px;
+  height: 300px;
+  
+  z-index: $element-zindex;
+   .social-box {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    i {
+      font-size: 27px;
+      padding: 5px;
+    }
+  }
 }
 
-
 }
+
+//responsive styles for desktops
 @media screen and (min-width: 992px) and (max-width:1199px) {
   .mango-logo {
   width: 100px;
   position: absolute;
   left: 30px;
-  top: 20px;
+  top: 32px;
   z-index: $element-zindex+1;
   img {
     width: 100%;
@@ -323,6 +357,15 @@ section h3 {
     i {
       font-size: 30px;
       padding: 3px;
+    }
+  }
+  .brand
+  {
+    margin-top:82px;
+    margin-left:120px;
+    h1
+    {
+      font-size:20px;
     }
   }
 }

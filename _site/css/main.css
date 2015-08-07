@@ -5813,7 +5813,8 @@ body {
   overflow: hidden; }
 
 .mango-container {
-  margin-top: 150px; }
+  margin-top: 150px;
+  padding-top: 100px; }
 
 /* BOOTSTRAP OVERRIDES */
 .mango-nav.navbar {
@@ -5937,6 +5938,9 @@ section h3 {
   font-weight: 700; }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
+  .mango-container {
+    padding-top: 0px; }
+
   .mango-logo {
     width: 100px;
     position: absolute;
@@ -6004,7 +6008,11 @@ section h3 {
     position: absolute;
     top: 150px;
     left: 142px; } }
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mango-nav.navbar {
+    margin-top: 145px;
+    z-index: 1100; }
+
   .mango-logo {
     width: 100px;
     position: absolute;
@@ -6012,13 +6020,32 @@ section h3 {
     top: 20px;
     z-index: 1001; }
     .mango-logo img {
-      width: 100%; } }
+      width: 100%; }
+
+  .mango-boxes-right {
+    background-image: url(../images/boxes-1.png);
+    background-position: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 400px;
+    height: 300px;
+    z-index: 1000; }
+    .mango-boxes-right .social-box {
+      position: absolute;
+      bottom: 50px;
+      right: 15px; }
+      .mango-boxes-right .social-box i {
+        font-size: 27px;
+        padding: 5px; } }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .mango-logo {
     width: 100px;
     position: absolute;
     left: 30px;
-    top: 20px;
+    top: 32px;
     z-index: 1001; }
     .mango-logo img {
       width: 100%; }
@@ -6040,7 +6067,12 @@ section h3 {
       right: 80px; }
       .mango-boxes-right .social-box i {
         font-size: 30px;
-        padding: 3px; } }
+        padding: 3px; }
+    .mango-boxes-right .brand {
+      margin-top: 82px;
+      margin-left: 120px; }
+      .mango-boxes-right .brand h1 {
+        font-size: 20px; } }
 @media (max-width: 728px) {
   body {
     overflow: visible; }

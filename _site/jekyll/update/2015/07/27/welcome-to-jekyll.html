@@ -22,7 +22,7 @@
 
     <div class="container-fluid">
       <header>
-        <nav class="mango-nav navbar col-sm-6 col-sm-offset-3 col-md-12 col-md-offset-2">
+        <nav class="mango-nav navbar col-sm-12  col-md-12 col-md-offset-2">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mango-nav" aria-expanded="false">
@@ -270,7 +270,7 @@
       {
    $("nav").removeClass("navbar-fixed-top")
       }*/
-      if ($(window).width() < 640) {
+      if ($(window).width() <= 640) {
           $( ".nav" ).addClass( "navbar-fixed-top" );
       }
       else {
