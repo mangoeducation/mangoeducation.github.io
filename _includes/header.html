@@ -11,18 +11,18 @@
             </div>
             <div class="collapse navbar-collapse" id="mango-nav">
               <ul class="nav navbar-nav">
-                <li><a id="about" href="#">ABOUT</a></li>
-                <li class="active"><a id="mangobox" href="#">MANGOBOX</a></li>
+                <li><a id="about" href="{{ "/index.html" | prepend: site.baseurl }}">ABOUT</a></li>
+                <li><a id="mangobox" href="{{ "/index.html" | prepend: site.baseurl }}">MANGOBOX</a></li>
                 <li><a id="mangocamp" href="#">MANGOCAMP</a></li>
                 <li><a id="contact" href="#">CONTACT</a></li>
-                <li><a id="blog" href="#">BLOG</a></li>
+                <li><a id="blog" href="/blog">BLOG</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <!--Logo-->
         <div class="mango-logo">
-          <img src="images/mango-logo1.png" alt="Mango Education"/>
+          <img src="{{ "/images/mango-logo1.png" | prepend: site.baseurl }}" alt="Mango Education"/>
         </div>
         <div class=" mango-boxes-right">
           <div class="brand hidden-xs">

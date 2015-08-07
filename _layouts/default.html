@@ -11,88 +11,7 @@
 
       <div id="main" class="container mango-container">
         <div class="row">
-          <article class="owl-carousel">
-            <section id="mango-about">
-              <div class="col-sm-5 col-md-offset-1">
-                <img src="images/mangobox.jpg" />
-              </div>
-
-              <div class="col-md-4">
-                <h2>About Section</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-            </section>
-            <section id="mango-landing">
-              <div class="col-sm-5 col-md-offset-1">
-                <img src="images/mangobox.jpg" />
-              </div>
-
-              <div class="col-md-4">
-                <h2>Landing (Mangobox) Section</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-            </section>
-            <section id="mango-camp">
-              <div class="col-sm-5 col-md-offset-1">
-                <img src="images/mangobox.jpg" />
-              </div>
-
-              <div class="col-md-4">
-                <h2>MangoCamp Section</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-            </section>
-            <section id="mango-blog">
-              <div class="col-sm-5 col-md-offset-1">
-                <img src="images/mangobox.jpg" />
-              </div>
-
-              <div class="col-md-4">
-                <h2>Blog Section</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-            </section>
-            <section id="mango-contact">
-              <div class="col-sm-5 col-md-offset-1">
-                <img src="images/mangobox.jpg" />
-              </div>
-
-              <div class="col-md-4">
-                <h2>Contact Section</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-            </section>
-          </article>
+            {{ content }}
         </div>
       </div>
 
@@ -111,10 +30,10 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="scripts/jquery.js"></script>
+    <script src="{{ "/scripts/jquery.js" | prepend: site.baseurl }}"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="{{ "/scripts/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
     <!-- build:js scripts/plugins.js -->
     <!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -131,8 +50,8 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <script src="{{ "/scripts/main.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/scripts/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
       getWindowSize();
       function getWindowSize(){
