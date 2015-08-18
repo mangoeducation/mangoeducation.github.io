@@ -17,13 +17,13 @@
 </head>
 
   <body>
-    <!--[if lt IE 10]>
+    <!--[if lt IE 10]>  
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="container-fluid">
       <header>
-        <nav class="mango-nav navbar col-sm-12  col-md-12 col-md-offset-2">
+        <nav class="mango-nav navbar col-sm-8  col-md-8 col-md-offset-2">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mango-nav" aria-expanded="false">
@@ -35,8 +35,12 @@
             </div>
             <div class="collapse navbar-collapse" id="mango-nav">
               <ul class="nav navbar-nav">
+ 
+                 
+ 
                 <li><a id="about" href="/index.html">ABOUT</a></li>
                 <li><a id="mangobox" href="/index.html">MANGOBOX</a></li>
+ 
                 <li><a id="mangocamp" href="#">MANGOCAMP</a></li>
                 <li><a id="contact" href="#">CONTACT</a></li>
                 <li><a id="blog" href="/blog">BLOG</a></li>
@@ -63,8 +67,9 @@
 
 
       <div id="main" class="container mango-container">
-        <div class="row">
-            <div class="col-md-2"></div><div class="col-md-8">
+ 
+        <div class="row"> 
+          <div class="col-md-2"></div><div class="col-md-8">
 <div class="post">
 
   <header class="post-header">
@@ -105,12 +110,13 @@
 </div>
 </div>
 
-        </div>
+ 
+         
       </div>
 
       <footer class="footer">
   <!--Left Boxes -->
-  <div class="mango-boxes-left">
+  <section class="mango-boxes-left">
     <p class="gift">
       <b>Gift</b><br/>
       a <b>MangoBox</b><br/>
@@ -119,16 +125,16 @@
     <p class="subscription">
       Subscribe <br/> to our <br/> <a href="#"><b>Newsletter</b>!</a>
     </p>
-  
-  <div class="pull-right visible-xs">
+     <section class="pull-right visible-xs">
     <p><a href="#">© MANGO EDUCATION, 2015</a></p>
   
-  </div>
-  </div>
-  <div class="pull-right hidden-xs">
+  </section>
+  
+  </section>
+   <section class="pull-right hidden-xs">
     <p><a href="#">© MANGO EDUCATION, 2015</a></p>
   
-  </div>
+  </section>
 </footer>
 
     </div>
@@ -165,7 +171,11 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+ 
+     <script src="/scripts/main.js"></script>
+ 
     <script src="/scripts/main.js"></script>
+ 
     <script src="/scripts/bootstrap.min.js"></script>
     <script type="text/javascript">
       getWindowSize();
@@ -194,11 +204,13 @@
           items: 1,
           startPosition: "#mango-landing"
         });
+        
+
         $('#about').click(function(){
-          carousel.trigger('to.owl.carousel',[0,500]);
+          carousel.trigger('to.owl.carousel',[1,500]);
         });
         $('#mangobox').click(function(){
-          carousel.trigger('to.owl.carousel',[1,500]);
+          carousel.trigger('to.owl.carousel',[0,500]);
         });
         $('#mangocamp').click(function(){
           carousel.trigger('to.owl.carousel',[2,500]);
@@ -236,6 +248,8 @@
       else {
           $("nav").removeClass("navbar-fixed-top")
       }
+    
+    
     </script>
     <!-- endbuild -->
   </body>

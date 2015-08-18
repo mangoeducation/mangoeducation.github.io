@@ -23,4 +23,8 @@ Facilitator/Teacher Effectiveness
 Target Students
 Research and Development
 A Strong Alumni Base
+<<<<<<< HEAD
 If the best can be catered to these dimensions of your educational aka knowledge enterprise, it is a promise that you have got yourself a golden egg laying hen, but make sure you are not the greedy farmer, play it like the tortoise and you will be the winner no matter what the obstacle is! All the Best wishes for the entrepreneur in YOU! Bon Voyage!!!
+=======
+If the best can be catered to these dimensions of your educational aka knowledge enterprise, it is a promise that you have got yourself a golden egg laying hen, but make sure you are not the greedy farmer, play it like the tortoise and you will be the winner no matter what the obstacle is! All the Best wishes for the entrepreneur in YOU! Bon Voyage!!!
+>>>>>>> eb7c5f1a5d7ca47c83acec28cee12839912bdb8b

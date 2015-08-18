@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   {% include head.html %}
   <body>
-    <!--[if lt IE 10]>
+    <!--[if lt IE 10]>  
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
@@ -10,9 +10,11 @@
       {% include header.html %}
 
       <div id="main" class="container mango-container">
-        <div class="row">
-            {{ content }}
-        </div>
+ 
+        <div class="row"> 
+          {{ content }}
+ 
+         
       </div>
 
       {% include footer.html %}
@@ -50,7 +52,11 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+ 
+     <script src="{{ "/scripts/main.js" | prepend: site.baseurl }}"></script>
+ 
     <script src="{{ "/scripts/main.js" | prepend: site.baseurl }}"></script>
+ 
     <script src="{{ "/scripts/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
       getWindowSize();
@@ -79,11 +85,13 @@
           items: 1,
           startPosition: "#mango-landing"
         });
+        
+
         $('#about').click(function(){
-          carousel.trigger('to.owl.carousel',[0,500]);
+          carousel.trigger('to.owl.carousel',[1,500]);
         });
         $('#mangobox').click(function(){
-          carousel.trigger('to.owl.carousel',[1,500]);
+          carousel.trigger('to.owl.carousel',[0,500]);
         });
         $('#mangocamp').click(function(){
           carousel.trigger('to.owl.carousel',[2,500]);
@@ -121,6 +129,8 @@
       else {
           $("nav").removeClass("navbar-fixed-top")
       }
+    
+    
     </script>
     <!-- endbuild -->
   </body>

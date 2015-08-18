@@ -16,13 +16,13 @@
 </head>
 
   <body>
-    <!--[if lt IE 10]>
+    <!--[if lt IE 10]>  
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="container-fluid">
       <header>
-        <nav class="mango-nav navbar col-sm-12  col-md-12 col-md-offset-2">
+        <nav class="mango-nav navbar col-sm-8  col-md-8 col-md-offset-2">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mango-nav" aria-expanded="false">
@@ -34,8 +34,12 @@
             </div>
             <div class="collapse navbar-collapse" id="mango-nav">
               <ul class="nav navbar-nav">
+ 
+                 
+ 
                 <li><a id="about" href="/index.html">ABOUT</a></li>
                 <li><a id="mangobox" href="/index.html">MANGOBOX</a></li>
+ 
                 <li><a id="mangocamp" href="#">MANGOCAMP</a></li>
                 <li><a id="contact" href="#">CONTACT</a></li>
                 <li><a id="blog" href="/blog">BLOG</a></li>
@@ -62,8 +66,40 @@
 
 
       <div id="main" class="container mango-container">
-        <div class="row">
-            <div class="post">
+ 
+        <div class="row"> 
+          <div class="post">
+ 
+	 <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <header class="post-header">
+          <h1 class="post-title">Welcome to Jekyll!</h1>
+         <p class="post-meta">Jul 27, 2015</p>
+        </header><!--
+  <header class="post-header">
+    <h1 class="post-title">Welcome to Jekyll!</h1>
+    <p class="post-meta">Jul 27, 2015</p>
+  </header>-->
+
+  <article class="post-content">
+    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+
+
+  </article>
+
+ 
   <div class="col-md-2"></div>
     <div class="col-md-8">
         <header class="post-header">
@@ -89,14 +125,16 @@
 
         </article>
   </div>
+ 
 </div>
 
-        </div>
+ 
+         
       </div>
 
       <footer class="footer">
   <!--Left Boxes -->
-  <div class="mango-boxes-left">
+  <section class="mango-boxes-left">
     <p class="gift">
       <b>Gift</b><br/>
       a <b>MangoBox</b><br/>
@@ -105,16 +143,16 @@
     <p class="subscription">
       Subscribe <br/> to our <br/> <a href="#"><b>Newsletter</b>!</a>
     </p>
-  
-  <div class="pull-right visible-xs">
+     <section class="pull-right visible-xs">
     <p><a href="#">© MANGO EDUCATION, 2015</a></p>
   
-  </div>
-  </div>
-  <div class="pull-right hidden-xs">
+  </section>
+  
+  </section>
+   <section class="pull-right hidden-xs">
     <p><a href="#">© MANGO EDUCATION, 2015</a></p>
   
-  </div>
+  </section>
 </footer>
 
     </div>
@@ -151,7 +189,11 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+ 
+     <script src="/scripts/main.js"></script>
+ 
     <script src="/scripts/main.js"></script>
+ 
     <script src="/scripts/bootstrap.min.js"></script>
     <script type="text/javascript">
       getWindowSize();
@@ -180,11 +222,13 @@
           items: 1,
           startPosition: "#mango-landing"
         });
+        
+
         $('#about').click(function(){
-          carousel.trigger('to.owl.carousel',[0,500]);
+          carousel.trigger('to.owl.carousel',[1,500]);
         });
         $('#mangobox').click(function(){
-          carousel.trigger('to.owl.carousel',[1,500]);
+          carousel.trigger('to.owl.carousel',[0,500]);
         });
         $('#mangocamp').click(function(){
           carousel.trigger('to.owl.carousel',[2,500]);
@@ -222,6 +266,8 @@
       else {
           $("nav").removeClass("navbar-fixed-top")
       }
+    
+    
     </script>
     <!-- endbuild -->
   </body>
