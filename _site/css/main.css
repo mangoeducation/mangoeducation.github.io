@@ -5951,6 +5951,10 @@ section h1 {
   font-family: "Montserrat";
   font-weight: 900; }
 
+.mango_07 {
+  width: 40%;
+  margin: auto; }
+
 section h2 {
   font-family: "Montserrat";
   font-weight: 900;
@@ -5988,6 +5992,12 @@ footer p {
   font-size: 10px; }
   footer p .right {
     color: white; }
+footer .contact #mc_embed_signup {
+  background-color: #3c3c3c; }
+  footer .contact #mc_embed_signup #mc_embed_signup_scroll {
+    text-align: left; }
+  footer .contact #mc_embed_signup form {
+    padding-left: 0px; }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
   #main {
@@ -6031,7 +6041,8 @@ footer p {
         padding: 2px; }
 
   .mango-footer {
-    width: 70%; }
+    width: 70%;
+    opacity: 1; }
 
   /*
     .mango-boxes-left {
@@ -6082,7 +6093,8 @@ footer {
 
 .fa-arrow-right {
   padding: 4px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  color: #ccc; }
 
 .social-box i {
   font-size: 20px;
@@ -6090,6 +6102,13 @@ footer {
 
 .right {
   float: right; }
+
+#map-canvas {
+  padding: 5px;
+  width: 80%;
+  top: 0px;
+  height: 180px;
+  background-color: #ccc; }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar-nav > li > a {
@@ -6169,6 +6188,13 @@ footer {
   body {
     overflow: visible; }
 
+  h2 {
+    font-size: 23px; }
+
+  #map-canvas {
+    width: 100%;
+    padding-right: 15px; }
+
   .navbar-nav {
     background-color: #FFBC3F; }
 
@@ -6180,11 +6206,25 @@ footer {
   .navbar-header .navbar-toggle {
     z-index: 1200; }
 
+  .mango_07 {
+    width: 100%; }
+
   .mango-footer {
     width: 78%; }
 
   .contact {
     text-align: center; }
+    .contact #mc_embed_signup {
+      background-color: #3c3c3c; }
+      .contact #mc_embed_signup #mc_embed_signup_scroll {
+        text-align: center !important; }
+    .contact #mc_embed_signup input.email {
+      width: 95%; }
+    .contact #mc_embed_signup input.button {
+      margin: auto; }
+
+  .padding-right {
+    padding-right: 30px; }
 
   .connect {
     text-align: center !important; } }
