@@ -71,7 +71,7 @@
         var position=new google.maps.LatLng(11.0252699,76.902456);
         var mapOptions = {
           center: position,
-          zoom: 8,
+          zoom: 17,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(
@@ -150,6 +150,10 @@
         // $('#blog').click(function(){
         //   carousel.trigger('to.owl.carousel',[4,500]);
         // });
+      $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
+          // Prevent carousel swipe
+          e.stopPropagation();
+      })
 
       });
   /*  if(screen.width<=640)) {

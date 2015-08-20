@@ -59,15 +59,16 @@
         </div>
         <div class=" mango-boxes-right">
           <div class="brand hidden-xs">
-            <h1><a href="#">www.themango.co</a></h1>
-            <h5>&nbsp&nbsp&nbsp&nbsp Contact:&nbsp&nbsp <i class="fa fa-phone"></i> &nbsp     +918197443753</h5><br>
+             <h1><a href="#">www.themango.co</a></h1>
+            <h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp<i class="fa fa-phone"></i>  +918197443753</h5><br>
               
           </div>
           <div class="social-box">
         <!-- Used Font Awesome Icons -->
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-pinterest"></i>
-            <i class="fa fa-youtube-square"></i>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-pinterest-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
           </div>
         </div>
       </header>
@@ -179,9 +180,10 @@ If the best can be catered to these dimensions of your educational aka knowledge
           <h3>Connect with us</h3>
           <div class="social-box">
         <!-- Used Font Awesome Icons -->
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-pinterest"></i>
-            <i class="fa fa-youtube-square"></i>
+              <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-pinterest-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
           </div>
          
      </div>
@@ -239,7 +241,7 @@ If the best can be catered to these dimensions of your educational aka knowledge
         var position=new google.maps.LatLng(11.0252699,76.902456);
         var mapOptions = {
           center: position,
-          zoom: 8,
+          zoom: 17,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(
@@ -318,6 +320,10 @@ If the best can be catered to these dimensions of your educational aka knowledge
         // $('#blog').click(function(){
         //   carousel.trigger('to.owl.carousel',[4,500]);
         // });
+      $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
+          // Prevent carousel swipe
+          e.stopPropagation();
+      })
 
       });
   /*  if(screen.width<=640)) {
