@@ -6,4 +6,4 @@ layout: default
 
 *Come back later! We're working on the content!*
 
-[Home](./)
+[Home](/)
