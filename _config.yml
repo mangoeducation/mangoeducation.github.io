@@ -3,4 +3,4 @@ description: A site for Mango Education's Young Developer Project
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
-paginate_path: "/excercises/page:num/"
+paginate_path: "/exercises/page:num/"
