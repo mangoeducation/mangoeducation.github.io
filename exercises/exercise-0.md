@@ -31,5 +31,6 @@ Follow the steps to install Python 3. As Python 2 is retiring in a few years, it
 		$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
     	$ sudo apt-get update
     	$ sudo apt-get install sublime-text-installer`
+
 ---
 [Home](/) | [Next](/exercises/exercise-1)
